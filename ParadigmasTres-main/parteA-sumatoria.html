@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte A – Sumatoria de dos valores</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            max-width: 480px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: #f5f7fa;
+            color: #1a1a2e;
+        }
+        h1 { font-size: 1.35rem; margin-bottom: 0.25rem; }
+        p.desc { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+        label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+        input[type="number"] {
+            width: 100%;
+            padding: 0.6rem 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        button {
+            width: 100%;
+            padding: 0.7rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover { background: #1d4ed8; }
+        .resultado-box {
+            margin-top: 1.5rem;
+            padding: 1rem 1.25rem;
+            border-radius: 10px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            font-size: 1.1rem;
+        }
+        .positivo { color: #16a34a; font-weight: 700; }
+        .cero     { color: #64748b; font-weight: 700; }
+        .negativo { color: #dc2626; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <h1>Parte A – Algorítmica</h1>
+    <p class="desc">Captura dos valores numéricos, calcula la sumatoria en memoria e indica si el resultado es positivo, cero o negativo.</p>
+
+    <label for="valor1">Primer valor</label>
+    <input type="number" id="valor1" placeholder="Ej: 10" step="any">
+
+    <label for="valor2">Segundo valor</label>
+    <input type="number" id="valor2" placeholder="Ej: -3" step="any">
+
+    <button type="button" id="btnCalcular">Calcular sumatoria</button>
+
+    <div class="resultado-box">
+        Resultado: <span id="resultado">—</span>
+    </div>
+
+    <script src="javascript/parteA-sumatoria.js"></script>
+</body>
+</html>
